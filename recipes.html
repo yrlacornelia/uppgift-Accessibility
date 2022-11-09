@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58df0b9ead.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+  
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./Images/logoheader.png" alt="Logo that says juice"
+        width="147"  height="49">
+        <nav id="menu"> <ul><li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li></ul> </nav>
+        <nav class="hamburger-menu" id="hamburger-menu">
+                      <button class="close-btn" id="close-btn">exit <i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav-items">
+                <li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li>
+            </ul>
+
+          </nav>
+          <button class="nav-btn" id="navBtn"> menu<i class="fa-solid fa-bars"></i></button>
+            
+       </header>
+
+       <section class="blender-container"> 
+<div class="blender blender-info">
+<h2>How to use a fruit blender</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p></div>
+  <!-- <iframe cc_load_policy=1 class="blender video-container" width="560" height="314" src="https://www.youtube.com/embed/uXCVTHfdKCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+   
+  </iframe> -->
+
+
+  <video class="blender video-container" width="560" height="314" id="video" controls preload="metadata">
+    <source src="video/Using a Handheld Juicer _ Quick Tips.mp4" type="video/mp4" />
+    <track
+      label="English"
+      kind="subtitles"
+      srclang="en"
+      src="./video/captions_output_1667856582.vtt"
+      default />
+  </video>
+       </section>
+
+       <section class="recipe-container" >
+        <div class="recipe-info"><h2>Our juices</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut</p>
+   </div>
+   <div class="recipe-cards">
+    <div class="recipe-card"> <img src="./Images/recipes/green-juice.jpeg" alt=" three glasses of green juice" srcset="" >   <div class="card-info"><h2>GREEN JUICE</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus</p> <h2>Ingredients</h2> <p>Apples <br>
+        3 medium (3" dia)546g <br>
+        Celery <br>
+        3 stalk, large (11"-12" long)192g<br>
+        Orange  (peeled)<br>
+</p></div> </div>
+        <div class="recipe-card"> <img src="./Images/recipes/apple-juice.jpeg" alt=" one glass of apple juice with apples around" srcset="" >  <div class="card-info"><h2>APPLE JUICE</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus</p> <h2>Ingredients</h2> <p>
+            10 Apples <br>
+200ml Water <br>
+1 tbs Sugar 
+
+           </p></div> </div>
+            <div class="recipe-card"> <img src="./Images/recipes/carrot-juice.jpeg" alt=" one glass of carrot juice with carrots behind" srcset="">  <div class="card-info"><h2>CARROT JUICE</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus</p> <h2>Ingredients</h2> <p>
+                1 bunch Carrots <br> 
+                1 inch Ginger, Fresh <br>
+                1 Lemon <br>
+                2 Naval oranges
+            </p></div> </div>
+
+                <div class="recipe-card"> <img src="./Images/recipes/orange-juice.jpeg" alt="two glasses of orange juice with orange peel behind" srcset="">  <div class="card-info"><h2>ORANGE JUICE</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus</p> <h2>Ingredients</h2> <p>
+                   
+                8 to 10 oranges (large ) <br>
+                ⅛ tsp pink salt (or kosher salt) <br>
+                1 inch ginger (piece, (peeled, can use up to 5 grams per serving)) <br>
+                ½ to ¾ cup water ((optional, if using blender)) <br>
+                8 to 10 mint leaves (or holy basil or wheatgrass)
+               
+
+                </p></div> </div>
+   </div>
+   
+    </section>
+    <footer>
+        <div class="footer info"><img src="./Images/logo-footer.png" alt="Logo that says juice" srcset="">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus</p></div>
+<div class="footer icons"><h3>Follow us</h3> <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i> </i></div>
+<div class="footer links"> 
+    <ul><li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li></ul>
+</div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

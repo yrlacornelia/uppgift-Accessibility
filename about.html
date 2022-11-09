@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58df0b9ead.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./Images/logoheader.png" alt="Logo that says juice"
+        width="147"  height="49">
+        <nav id="menu"> <ul><li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li></ul> </nav>
+        <nav class="hamburger-menu" id="hamburger-menu">
+                      <button class="close-btn" id="close-btn">exit <i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav-items">
+                <li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li>
+            </ul>
+
+          </nav>
+          <button class="nav-btn" id="navBtn"> menu<i class="fa-solid fa-bars"></i></button>
+       </header> 
+    <section class="about-section">
+        <div class="about image">
+ <img src="./Images/about/juice.jpeg" alt= " Three glasses with different flavors of juice and the fruit infront. Fruits and flavors are oranges, kiwis and apples. " >
+</div>
+<div class="about about-text">
+<h2>LOREM IPSUM DOLOR </h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus in semper amet sed facilisis augue nisl blandit fames. Arcu, sit pretium amet lobortis pellentesque turpis arcu vestibulum parturient. Sit cursus montes, in justo, pellentesque ac. Mi feugiat eu quis eget aliquam sed sit blandit pharetra. Eget vitae augue feugiat eget nisl, lobortis. Vitae duis erat augue etiam purus, in massa tristique urna. Ultrices odio sit vestibulum, in habitasse auctor nunc. Bibendum egestas sit aliquet posuere.</p>
+<p>   <a href= "https://sv.wikipedia.org/wiki/Juice">Learn more about juices here <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> </p>
+</div>
+
+    </section>
+
+<section class="form">
+        <h2>Contact Form</h2>
+        <p>If you have questions feel free to contact us here</p>
+        <form onsubmit="return check()" novalidate>
+            <label>Name</label> <br>
+            <input type="text" id="fname" 
+                name="firstname" 
+                pattern="^[a-öA-Ö]+$"
+                onchange="checkFname()"
+                required minlength="2" maxlength="20">
+         <div id="error-fname" class="emsg"></div> 
+        
+             <label for="email">Email</label> <br>
+            <input required type="email" name="email" id="email" 
+                 onchange="checkEmail()"   /> 
+                 <div id="error-email" class="emsg"></div> 
+                 <label for="textarea">Please write comments or questions here</label> <br>
+        <textarea required minlength="10"  id="subject" name="subject" rows="4" cols="30"
+        onchange="checkTextArea()"></textarea>
+            <div id="error-subject" class="emsg"></div> 
+
+  
+        <input type="submit" value="Submit"/>
+        </form>
+</section>
+
+    <footer>
+        <div class="footer info"><img src="./Images/logo-footer.png" alt="Logo that says juice" srcset="">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus</p></div>
+<div class="footer icons"><h3>Follow us</h3> <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i> </i></div>
+<div class="footer links"> 
+    <ul><li> <a href="./index.html">Home</a> </li><li> <a href="./recipes.html">Recpies</a></li><li> <a href="./about.html">About</a> </li></ul>
+</div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
